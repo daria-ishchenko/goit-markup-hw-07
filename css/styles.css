@@ -65,7 +65,7 @@ h6 {
   clip-path: inset(50%);
   margin: -1px;
 }
-.container {
+/*------ .container { 
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
@@ -73,6 +73,38 @@ h6 {
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
+}--------*/
+
+.container {
+  padding: 0 15px;
+  background-color: #31d0aa;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 428px;
+    margin: 0 auto;
+  }
+  .section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1158px;
+  }
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 /*------------- Header --------------*/
@@ -149,7 +181,7 @@ h6 {
   background-color: var(--pressed-state);
 }
 
-/*------------ Contacts ------------*/
+/*------------ Contacts 
 
 .address {
   display: flex;
@@ -196,9 +228,9 @@ h6 {
 .contacts .phone:hover,
 .contacts .phone:focus {
   color: var(--pressed-state);
-}
+}------------*/
 
-/*---------- Section hero ----------*/
+/*---------- Section hero 
 
 .hero {
   padding-top: 188px;
@@ -251,9 +283,9 @@ h6 {
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--pressed-state);
-}
+}----------*/
 
-/*-------------- Section 1 ---------------*/
+/*-------------- Section 1 
 
 .features {
   display: flex;
@@ -286,9 +318,9 @@ h6 {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: left;
-}
+}---------------*/
 
-/*--------- Section 2 What we are doing --------*/
+/*--------- Section 2 What we are doing 
 .work {
   padding-top: 0px;
 }
@@ -305,9 +337,9 @@ h6 {
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
-}
+}--------*/
 
-/*--- Section 3 Team section ---*/
+/*--- Section 3 Team section 
 
 .team-section {
   background-color: var(--light);
@@ -385,9 +417,9 @@ h6 {
 .media-team-link:focus {
   background-color: var(--pressed-state);
   border-radius: 50%;
-}
+}---*/
 
-/*------------- Customers -------------*/
+/*------------- Customers 
 
 .customers-section {
   padding-top: 130px;
@@ -428,9 +460,9 @@ h6 {
 .customers-link:focus {
   color: var(--pressed-state);
   border: 1px solid var(--pressed-state);
-}
+}-------------*/
 
-/*------------- Footer --------------*/
+/*------------- Footer 
 
 .page-footer {
   padding-top: 100px;
@@ -502,9 +534,9 @@ h6 {
 }
 .media-footer-svg {
   fill: currentColor;
-}
+}--------------*/
 
-/*------------ Subscribe -------------*/
+/*------------ Subscribe 
 
 .subscribe-title {
   font-size: 16px;
@@ -559,9 +591,9 @@ h6 {
 .subscribe-button:hover,
 .subscribe-button:focus {
   background-color: var(--pressed-state);
-}
+}-------------*/
 
-/*---------- Modal ------------*/
+/*---------- Modal 
 
 .is-hidden {
   visibility: hidden;
@@ -617,9 +649,9 @@ h6 {
 .modal-btn:focus {
   fill: var(--white-text);
   background-color: var(--pressed-state);
-}
+}------------*/
 
-/* ------------ Modal form ------------ */
+/* ------------ Modal form 
 
 .modal-title {
   width: 360px;
@@ -693,9 +725,9 @@ h6 {
 }
 .modal-input-comment:focus {
   border-color: var(--brand-color);
-}
+}------------ */
 
-/* ------------- Checkbox -------------- */
+/* ------------- Checkbox 
 
 .check-text {
   margin-top: 16px;
@@ -733,9 +765,9 @@ h6 {
   background-image: url(../images/vector-ok.svg);
   background-repeat: no-repeat;
   background-position: center;
-}
+}-------------- */
 
-/* ------------ Submit ------------ */
+/* ------------ Submit 
 .submit-button {
   display: block;
   margin-left: auto;
@@ -761,9 +793,9 @@ h6 {
 .submit-button:hover,
 .submit-button:focus {
   background-color: var(--pressed-state);
-}
+}------------ */
 
-/*--- Buttons portfolio list ---*/
+/*--- Buttons portfolio list 
 
 .portfolio {
   padding-top: 96px;
@@ -796,9 +828,9 @@ h6 {
   background-color: var(--pressed-state);
   box-shadow: 0px 2px 2px 0px #0000001f, 0px 2px 1px 0px #00000014,
     0px 3px 1px 0px #0000001a;
-}
+}---*/
 
-/*--- Portfolio cards ---*/
+/*--- Portfolio cards 
 
 .filter-link:hover,
 .filter-link:focus {
@@ -845,8 +877,8 @@ h6 {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: left;
-}
-/*--- Card overlay ---*/
+}---*/
+/*--- Card overlay 
 .filter-card-overlay {
   position: relative;
   overflow: hidden;
@@ -873,4 +905,4 @@ h6 {
 }
 .filter-link:hover .overlay-text-wrap {
   transform: translateY(0);
-}
+}---*/
