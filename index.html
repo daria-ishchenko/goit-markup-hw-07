@@ -16,6 +16,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
   <body>
     <!-- Header-->
@@ -37,6 +40,11 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="mobile-menu-open js-open-menu">
+          <svg width="32" height="22" class="mobile-menu-open-icon">
+            <use href="./images/icons.svg#hamburger"></use>
+          </svg>
+        </button>
         <address class="address">
           <ul class="contacts list">
             <li>
@@ -50,9 +58,73 @@
           </ul>
         </address>
       </div>
+
+      <div class="mobile-menu js-menu-container">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close-btn js-close-menu">
+            <svg class="mobile-menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <ul class="mobile-nav">
+            <li class="list">
+              <a href="" class="mobile-nav-link link">Studio</a>
+            </li>
+            <li class="list">
+              <a href="" class="mobile-nav-link link">Portfolio</a>
+            </li>
+            <li class="list">
+              <a href="" class="mobile-nav-link link">Contacts</a>
+            </li>
+          </ul>
+          <ul class="mobile-contacts-list list">
+            <li class="mobile-contacts">
+              <a href="tel:+110001111111" class="mobile-phone link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-contacts">
+              <a href="mailto:info@devstudio.com" class="mobile-email link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-media-list list">
+            <li class="mobile-media-list-item">
+              <a href="" class="mobile-media-link">
+                <svg class="mobile-media-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-media-list-item">
+              <a href="" class="mobile-media-link">
+                <svg class="mobile-media-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-media-list-item">
+              <a href="" class="mobile-media-link">
+                <svg class="mobile-media-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-media-list-item">
+              <a href="" class="mobile-media-link">
+                <svg class="mobile-media-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
-      <!-- Section hero
+      <!-- Section hero-->
       <section class="hero-img hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
@@ -60,8 +132,8 @@
             Order Service
           </button>
         </div>
-      </section>-->
-      <!-- Section 1 
+      </section>
+      <!-- Section 1 -->
       <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Features</h2>
@@ -116,7 +188,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- Section 2 
       <section class="work section">
         <div class="container">
@@ -154,7 +226,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section> 
       <!-- Section 3 
       <section class="team-section section">
         <div class="container">
@@ -605,5 +677,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>------------------>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

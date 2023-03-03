@@ -1,4 +1,4 @@
-:root {
+/* :root { 
   --brand-color: #4d5ae5;
   --pressed-state: #404bbf;
   --dark: #2e2f42;
@@ -65,7 +65,7 @@ h6 {
   clip-path: inset(50%);
   margin: -1px;
 }
-/*------ .container { 
+.container {
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
@@ -73,41 +73,9 @@ h6 {
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
-}--------*/
+}*/
 
-.container {
-  padding: 0 15px;
-  background-color: #31d0aa;
-}
-
-@media screen and (min-width: 480px) {
-  .container {
-    width: 428px;
-    margin: 0 auto;
-  }
-  .section {
-    padding-top: 96px;
-    padding-bottom: 96px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1158px;
-  }
-  .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
-}
-
-/*------------- Header --------------*/
+/*------------- Header 
 
 .header {
   border-bottom: 1px solid var(--accent);
@@ -179,7 +147,7 @@ h6 {
   height: 4px;
   border-radius: 2px;
   background-color: var(--pressed-state);
-}
+}--------------*/
 
 /*------------ Contacts 
 
@@ -254,6 +222,7 @@ h6 {
   width: 496px;
   color: var(--white-text);
   font-size: 56px;
+  font-weight:700;
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
