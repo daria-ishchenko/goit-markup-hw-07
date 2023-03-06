@@ -222,7 +222,7 @@ h6 {
   width: 496px;
   color: var(--white-text);
   font-size: 56px;
-  font-weight:700;
+  font-weight:700
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
@@ -255,7 +255,9 @@ h6 {
 }----------*/
 
 /*-------------- Section 1 
-
+.features-container {
+  display: flex;
+}
 .features {
   display: flex;
   gap: 24px;

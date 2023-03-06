@@ -1,0 +1,85 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1158px;
+  }
+  /* -------------------- Header -------------------- */
+
+  .contacts {
+    flex-direction: row;
+    gap: 40px;
+    padding-top: 0;
+  }
+  .contacts .email {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .contacts .phone {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .contacts .email {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .contacts .phone {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  /* ---------------------- Hero ---------------------- */
+  .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+  .hero-img {
+    height: 600px;
+    max-width: 1440px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7) 100%
+      ),
+      url(../images/people-office.jpg);
+  }
+  /*-------------- Features ---------------*/
+  .features {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+  .feature-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 112px;
+    background-color: var(--light);
+  }
+  .svg-feature {
+    fill: var(--dark);
+  }
+  /*--------- Section 2 What we are doing --------*/
+  .work {
+    padding-top: 0px;
+    display: flex;
+  }
+  .work-list {
+    display: flex;
+    margin: 0;
+    gap: 24px;
+  }
+  .work-title {
+    margin-bottom: 72px;
+    color: var(--dark);
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  /* ---------------- Team ------------------ */
+  .team-list {
+    flex-wrap: nowrap;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 24px;
+  }
+}
