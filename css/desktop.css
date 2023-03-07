@@ -54,6 +54,9 @@
   .svg-feature {
     fill: var(--dark);
   }
+  .feature-text {
+    width: 264px;
+  }
   /*--------- Section 2 What we are doing --------*/
   .work {
     padding-top: 0px;
@@ -81,5 +84,37 @@
     padding: 0;
     margin: 0;
     gap: 24px;
+  }
+  /* ----------------- Customers ------------- */
+  .customers {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+  /*---------------- Footer -------------------*/
+  .footer-container {
+    flex-direction: row;
+    gap: 80px;
+  }
+  .footer-tablet-wrap {
+    gap: 120px;
+  }
+  .subscribe-wrap {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .footer-text {
+    margin-bottom: 0;
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/people-office-2x.jpg');
   }
 }

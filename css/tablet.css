@@ -134,4 +134,54 @@
     flex-direction: row;
     justify-content: center;
   }
+  /* ----------------- Customers ------------- */
+  .customers {
+    column-gap: 24px;
+  }
+  .customers-item {
+    width: 168px;
+  }
+  /*---------------- Footer -------------------*/
+  .footer-container {
+    align-items: flex-start;
+  }
+  .footer-tablet-wrap {
+    display: flex;
+    gap: 24px;
+  }
+  .media-footer {
+    align-items: flex-start;
+  }
+  .subscribe-wrap {
+    display: flex;
+    padding-top: 0;
+    margin-left: 0;
+    align-items: flex-start;
+  }
+  .subscribe-form {
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+  }
+  .subscribe-button {
+    margin-top: 0px;
+  }
+  /* ------------------------ */
+
+  .modal-window {
+    width: 408px;
+  }
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/hero-tablet-2x.jpg');
+  }
 }

@@ -158,16 +158,18 @@ h6 {
 }
 .mobile-menu-close-btn {
   position: absolute;
+  display: flex;
   right: 24px;
   top: 24px;
   width: 24px;
   height: 24px;
-  display: flex;
+  margin-bottom: 24px;
   align-items: center;
   justify-content: center;
   background-color: var(--accent);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  cursor: pointer;
   transition-property: background-color;
   transition: var(--transition);
 }
@@ -177,7 +179,7 @@ h6 {
   background-color: var(--pressed-state);
 }
 .mobile-nav {
-  padding-top: 80px;
+  margin-top: 32px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -193,15 +195,16 @@ h6 {
   transition-property: color;
   transition: var(--transition);
 }
-.mobile-nav-link:hover,
-.mobile-nav-link:focus {
+.mob-current {
   color: var(--pressed-state);
-  text-decoration: none;
 }
+
 .mobile-contacts-list {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  margin-bottom: 48px;
+  margin-top: auto;
 }
 .mobile-contacts {
   display: flex;
@@ -229,14 +232,7 @@ h6 {
   transition-property: color;
   transition: var(--transition);
 }
-.mobile-email:hover,
-.mobile-email:focus {
-  color: var(--pressed-state);
-}
-.mobile-phone:hover,
-.mobile-phone:focus {
-  color: var(--pressed-state);
-}
+
 .mobile-media-list {
   display: flex;
   max-width: 428px;
@@ -449,15 +445,16 @@ h6 {
 }
 .customers {
   display: flex;
-  gap: 72px 16px;
   flex-wrap: wrap;
+  column-gap: 16px;
+  row-gap: 72px;
+  justify-content: center;
 }
 
 .customers-item {
   display: flex;
-  width: 168px;
+  width: 190px;
   height: 88px;
-  flex-basis: calc((100% - (2 * 16px)) / 2);
 }
 .customers-link {
   display: flex;
@@ -532,7 +529,6 @@ h6 {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-align: left;
 }
 .media-footer-list {
   display: flex;
@@ -646,7 +642,7 @@ h6 {
   padding-bottom: 24px;
   padding-left: 24px;
   position: absolute;
-  width: 408px;
+  width: 392px;
   min-height: 584px;
   left: 50%;
   top: 50%;
@@ -754,7 +750,8 @@ h6 {
   padding-left: 16px;
   transition: var(--transition);
 }
-.modal-input-comment:focus {
+.modal-input-comment:focus,
+.modal-input-comment:hover {
   border-color: var(--brand-color);
 }
 
@@ -825,7 +822,20 @@ h6 {
 .submit-button:focus {
   background-color: var(--pressed-state);
 }
-@media screen and (min-width: 320px) and (max-width: 480px) {
+
+
+@media screen and (max-width: 480px) {
+  /* ------ Modal ------ */
+  
+  .modal-window {
+    max-width: 300px;
+  }
+  .modal-title {
+    font-size: 14px;
+    width: 250px;
+    text-align: center;
+  }
+
 }
 
 @media (min-device-pixel-ratio: 2),
