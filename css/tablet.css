@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1999px) {
   .container {
     max-width: 768px;
   }
@@ -113,6 +113,18 @@
       ),
       url(../images/hero-tablet.jpg);
   }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url('../images/hero-tablet-2x.jpg');
+    }
+  }
   /*-------------- Features ---------------*/
 
   .features {
@@ -128,7 +140,7 @@
   .feature-title {
     text-align: left;
   }
-  /* ---------------- Team ------------------ */
+  /*---------------- Team ------------------*/
   .team-list {
     display: flex;
     flex-wrap: wrap;
@@ -137,7 +149,7 @@
     flex-direction: row;
     justify-content: center;
   }
-  /* ----------------- Customers ------------- */
+  /*----------------- Customers -------------*/
   .customers {
     column-gap: 24px;
   }
@@ -148,7 +160,7 @@
   .footer-container {
     align-items: flex-start;
   }
-  .footer-tablet-wrap {
+  .footer-info-wrap {
     display: flex;
     gap: 24px;
   }
@@ -170,21 +182,9 @@
   .subscribe-button {
     margin-top: 0px;
   }
-  /* ------------------------ */
+  /* --------------- Modal -------------- */
 
   .modal-window {
     width: 408px;
-  }
-}
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(
-        to right,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url('../images/hero-tablet-2x.jpg');
   }
 }
