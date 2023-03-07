@@ -51,6 +51,9 @@
     height: 112px;
     background-color: var(--light);
   }
+  .feature-title {
+    font-weight: 500;
+  }
   .svg-feature {
     fill: var(--dark);
   }

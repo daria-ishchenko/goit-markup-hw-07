@@ -125,6 +125,9 @@
     width: calc((100% - 24px) / 2);
     margin-bottom: 0;
   }
+  .feature-title {
+    text-align: left;
+  }
   /* ---------------- Team ------------------ */
   .team-list {
     display: flex;

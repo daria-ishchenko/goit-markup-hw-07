@@ -64,7 +64,6 @@ h6 {
   clip-path: inset(50%);
   margin: -1px;
 }
-/* ----------------------------------------- */
 .section {
   padding-top: 96px;
   padding-bottom: 96px;
@@ -327,9 +326,9 @@ h6 {
 .feature-title {
   margin-top: 8px;
   color: var(--dark);
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
 }
@@ -823,10 +822,9 @@ h6 {
   background-color: var(--pressed-state);
 }
 
-
 @media screen and (max-width: 480px) {
   /* ------ Modal ------ */
-  
+
   .modal-window {
     max-width: 300px;
   }
@@ -835,7 +833,6 @@ h6 {
     width: 250px;
     text-align: center;
   }
-
 }
 
 @media (min-device-pixel-ratio: 2),
