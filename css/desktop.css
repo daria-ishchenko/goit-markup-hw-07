@@ -12,18 +12,14 @@
   .contacts .email {
     padding-top: 24px;
     padding-bottom: 24px;
+    font-size: 16px;
+    line-height: 1.5;
   }
   .contacts .phone {
     padding-top: 24px;
     padding-bottom: 24px;
-  }
-  .contacts .email {
     font-size: 16px;
-    line-height: 24px;
-  }
-  .contacts .phone {
-    font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
   }
   /* ---------------------- Hero ---------------------- */
   .hero {
@@ -54,7 +50,14 @@
   /*-------------- Features ---------------*/
   .features {
     flex-wrap: nowrap;
-    gap: 24px;
+  }
+  .feature-title {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .feature-text {
+    width: 264px;
+    font-weight: 400;
   }
   .feature-icon {
     display: flex;
@@ -63,14 +66,8 @@
     height: 112px;
     background-color: var(--light);
   }
-  .feature-title {
-    font-weight: 500;
-  }
   .svg-feature {
     fill: var(--dark);
-  }
-  .feature-text {
-    width: 264px;
   }
   /*------------  What we are doing ----------*/
   .work {
@@ -95,15 +92,10 @@
   /* ---------------- Team ------------------ */
   .team-list {
     flex-wrap: nowrap;
-    display: flex;
-    padding: 0;
-    margin: 0;
-    gap: 24px;
   }
-  /* ----------------- Customers ------------- */
+  /* --------------- Customers -------------- */
   .customers {
     flex-wrap: nowrap;
-    gap: 24px;
   }
   /*---------------- Footer -------------------*/
   .footer-container {
@@ -120,4 +112,6 @@
   .footer-text {
     margin-bottom: 0;
   }
+
+  
 }

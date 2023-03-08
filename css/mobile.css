@@ -75,7 +75,7 @@ h6 {
   margin-left: auto;
   margin-right: auto;
 }
-/*----------------- Header -------------------*/
+/*-------------------- Header ----------------------*/
 .header {
   border-bottom: 1px solid var(--accent);
 }
@@ -326,7 +326,7 @@ h6 {
       url('../images/hero-mobile-2x.jpg');
   }
 }
-/* -----------Features----------- */
+/* -------------------- Features -------------------- */
 .features-container {
   display: flex;
 }
@@ -351,22 +351,21 @@ h6 {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: left;
+  font-weight: 500;
 }
 .feature-icon {
   display: none;
 }
-/*-------------- What are we doing ----------------*/
+/*--------------- What are we doing ----------------*/
 .work {
   display: none;
 }
-/* ---------- Team section --------- */
+/* ----------------- Team section ----------------- */
 .team-section {
   background-color: var(--light);
   padding-bottom: 110px;
 }
 .team-list {
-  padding-top: 120px;
-  padding-bottom: 120px;
   display: flex;
   flex-direction: column;
   padding: 0;
@@ -383,7 +382,6 @@ h6 {
   letter-spacing: 0.02em;
   text-align: center;
 }
-
 .team-member-card {
   background-color: var(--background);
   box-shadow: 0px 2px 1px 0px #2e2f4214, 0px 1px 1px 0px #2e2f4229,
@@ -441,7 +439,7 @@ h6 {
   background-color: var(--pressed-state);
   border-radius: 50%;
 }
-/*------------- Customers -------------*/
+/*------------------ Customers ------------------*/
 
 .customers-section {
   padding-top: 96px;
@@ -488,7 +486,7 @@ h6 {
   border: 1px solid var(--pressed-state);
 }
 
-/*------------- Footer --------------*/
+/*-------------------- Footer --------------------*/
 
 .page-footer {
   padding-top: 100px;
@@ -571,7 +569,7 @@ h6 {
   fill: currentColor;
 }
 
-/*------------ Subscribe -------------*/
+/*------------------- Subscribe -------------------*/
 
 .subscribe-title {
   font-size: 16px;
@@ -631,7 +629,7 @@ h6 {
   background-color: var(--pressed-state);
 }
 
-/*---------- Modal ------------*/
+/*--------------------- Modal ----------------------*/
 
 .is-hidden {
   visibility: hidden;
@@ -688,9 +686,6 @@ h6 {
   fill: var(--white-text);
   background-color: var(--pressed-state);
 }
-
-/* ------------ Modal form ------------ */
-
 .modal-title {
   width: 360px;
   font-size: 16px;
@@ -765,9 +760,6 @@ h6 {
 .modal-input-comment:hover {
   border-color: var(--brand-color);
 }
-
-/* ------------- Checkbox -------------- */
-
 .check-text {
   margin-top: 16px;
   margin-bottom: 24px;
@@ -805,8 +797,6 @@ h6 {
   background-repeat: no-repeat;
   background-position: center;
 }
-
-/* ------------ Submit ------------ */
 .submit-button {
   display: block;
   margin-left: auto;
@@ -834,15 +824,52 @@ h6 {
   background-color: var(--pressed-state);
 }
 
-@media screen and (max-width: 480px) {
-  /* ------ Modal ------ */
+/* -------------------------------------------------- */
 
-  .modal-window {
+@media screen and (max-width: 480px) {
+  .mobile-nav {
+    margin-top: 22px;
+    gap: 20px;
+  }
+  .mobile-nav-link {
+    font-size: 30px;
+  }
+  .mobile-contacts {
+    gap: 40px;
+  }
+  .mobile-phone {
+    font-size: 25px;
+  }
+  .mobile-media-list {
     max-width: 300px;
+    gap: 20px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .modal-window {
+    padding-top: 52px;
+    width: 320px;
   }
   .modal-title {
     font-size: 14px;
     width: 250px;
     text-align: center;
+  }
+  .modal-input-comment {
+    height: 70px;
+    padding-bottom: 50px;
+  }
+  .hero-title {
+    font-size: 30px;
+  }
+  .feature-title {
+    font-size: 30px;
+  }
+  .team-title {
+    font-size: 30px;
+  }
+  .customers-title {
+    font-size: 30px;
   }
 }

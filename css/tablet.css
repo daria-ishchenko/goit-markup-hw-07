@@ -2,14 +2,8 @@
   .container {
     max-width: 768px;
   }
-  .header-container {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  .header-nav {
-    display: flex;
-    align-items: center;
-  }
+  /* -------------------- Header -------------------- */
+
   .site-nav {
     display: flex;
     gap: 40px;
@@ -46,7 +40,6 @@
     border-radius: 2px;
     background-color: var(--pressed-state);
   }
-  /*------------------ Contacts --------------------*/
   .address {
     display: flex;
     align-items: center;
@@ -140,6 +133,7 @@
   .feature-title {
     text-align: left;
   }
+
   /*---------------- Team ------------------*/
   .team-list {
     display: flex;
@@ -187,4 +181,5 @@
   .modal-window {
     width: 408px;
   }
+  
 }
